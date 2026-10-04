@@ -1,79 +1,293 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>الأستاذ جواد العماري | محام بهيئة الدار البيضاء</title>
-<meta name="description" content="الموقع المهني للأستاذ جواد العماري، محام بهيئة الدار البيضاء. استشارات ومواكبة قانونية.">
+
 <style>
-:root{--ink:#17202a;--gold:#b28a3b;--cream:#f7f4ed;--white:#fff;--muted:#69727d}
-*{box-sizing:border-box}body{margin:0;font-family:Tahoma,Arial,sans-serif;color:var(--ink);background:#fff;line-height:1.8}
-a{text-decoration:none;color:inherit}.nav{position:sticky;top:0;z-index:10;background:#fff;border-bottom:1px solid #eee}
-.navin{max-width:1100px;margin:auto;padding:14px 20px;display:flex;align-items:center;justify-content:space-between;gap:20px}
-.logo{font-weight:700;font-size:18px}.logo span{color:var(--gold)}
-.menu{display:flex;gap:20px;font-size:14px}.menu a:hover{color:var(--gold)}
-.hero{background:linear-gradient(135deg,#111923,#253344);color:#fff}
-.heroin{max-width:1100px;margin:auto;padding:85px 20px;display:grid;grid-template-columns:1.4fr .8fr;gap:50px;align-items:center}
-.badge{display:inline-block;border:1px solid #b28a3b;border-radius:30px;padding:4px 15px;color:#e3c47d;font-size:13px}
-h1{font-size:46px;line-height:1.25;margin:18px 0 10px}h2{font-size:30px;margin:0 0 12px}
-.lead{font-size:19px;color:#e7ebef;max-width:650px}.buttons{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}
-.btn{display:inline-block;padding:11px 22px;border-radius:8px;background:var(--gold);color:#fff;font-weight:700}
-.btn.alt{background:transparent;border:1px solid #d8dfe5}
-.mark{height:270px;width:270px;border:2px solid var(--gold);border-radius:50%;display:grid;place-items:center;margin:auto;text-align:center;padding:30px;color:#e3c47d;font-size:25px}
-section{padding:70px 20px}.container{max-width:1100px;margin:auto}.center{text-align:center}.sub{color:var(--muted);max-width:700px;margin:0 auto 35px}
-.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.card{background:#fff;border:1px solid #e8e8e8;border-radius:12px;padding:25px;box-shadow:0 6px 20px rgba(0,0,0,.04)}.card h3{margin-top:0}.icon{font-size:28px;color:var(--gold)}
-.about{background:var(--cream)}.aboutgrid{display:grid;grid-template-columns:1fr 1fr;gap:45px;align-items:center}
-.list{padding:0;list-style:none}.list li{margin:10px 0}.list li:before{content:"✓";color:var(--gold);font-weight:bold;margin-left:8px}
-.contact{background:#111923;color:#fff}.contact .sub{color:#cbd2da}.contactgrid{display:grid;grid-template-columns:1fr 1fr;gap:25px}.contactbox{border:1px solid #3c4753;border-radius:12px;padding:25px}.contactbox a{color:#e3c47d}
-footer{background:#0c1219;color:#aeb7c1;text-align:center;padding:22px;font-size:13px}
-@media(max-width:750px){.menu{display:none}.heroin,.aboutgrid,.contactgrid{grid-template-columns:1fr}.hero{text-align:center}h1{font-size:34px}.lead{font-size:17px}.mark{height:210px;width:210px}.cards{grid-template-columns:1fr}section{padding:50px 18px}}
+*{box-sizing:border-box;margin:0;padding:0}
+body{
+    font-family:Arial,"Tahoma",sans-serif;
+    background:#f7f5f0;
+    color:#222;
+    line-height:1.8;
+}
+header{
+    background:#17212b;
+    color:white;
+    padding:20px 7%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:20px;
+}
+.logo{
+    font-size:24px;
+    font-weight:bold;
+}
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:0 10px;
+}
+.lang{
+    background:#b89452;
+    border:0;
+    color:white;
+    padding:8px 14px;
+    border-radius:5px;
+    cursor:pointer;
+}
+.hero{
+    min-height:470px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    padding:60px 20px;
+    background:linear-gradient(135deg,#17212b,#2c3e50);
+    color:white;
+}
+.hero h1{font-size:42px;margin-bottom:10px}
+.hero h2{font-size:24px;color:#d5b56b;margin-bottom:20px}
+.hero p{font-size:18px;max-width:750px;margin:auto}
+.btn{
+    display:inline-block;
+    margin-top:30px;
+    padding:12px 28px;
+    background:#b89452;
+    color:white;
+    text-decoration:none;
+    border-radius:5px;
+}
+section{
+    padding:60px 7%;
+}
+.title{
+    text-align:center;
+    margin-bottom:40px;
+    color:#17212b;
+    font-size:30px;
+}
+.about{
+    max-width:900px;
+    margin:auto;
+    text-align:center;
+    font-size:18px;
+}
+.services{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:20px;
+}
+.card{
+    background:white;
+    padding:30px 20px;
+    border-radius:10px;
+    text-align:center;
+    box-shadow:0 4px 15px rgba(0,0,0,.08);
+}
+.card h3{
+    color:#17212b;
+    margin-bottom:10px;
+}
+.contact{
+    background:#17212b;
+    color:white;
+    text-align:center;
+}
+.contact .title{color:white}
+.contact p{margin:10px}
+footer{
+    background:#101820;
+    color:#bbb;
+    text-align:center;
+    padding:20px;
+    font-size:14px;
+}
+.fr{display:none;direction:ltr}
+@media(max-width:700px){
+    header{flex-direction:column}
+    .hero h1{font-size:31px}
+    .hero h2{font-size:20px}
+    nav a{margin:0 5px}
+}
 </style>
 </head>
+
 <body>
-<nav class="nav"><div class="navin">
-<div class="logo">الأستاذ <span>جواد العماري</span></div>
-<div class="menu"><a href="#home">الرئيسية</a><a href="#services">المجالات</a><a href="#about">عن المكتب</a><a href="#articles">المقالات</a><a href="#contact">تواصل</a></div>
-</div></nav>
 
-<header class="hero" id="home"><div class="heroin">
-<div>
-<span class="badge">محام بهيئة الدار البيضاء</span>
-<h1>مواكبة قانونية مهنية<br>وثقة تُبنى على الوضوح</h1>
-<p class="lead">موقع مهني لتقديم المعلومات القانونية، التعريف بمجالات العمل، واستقبال طلبات التواصل والاستشارة.</p>
-<div class="buttons"><a class="btn" href="#contact">طلب تواصل</a><a class="btn alt" href="#services">اكتشف المجالات</a></div>
+<header>
+<div class="logo">⚖️ جواد العماري</div>
+
+<nav>
+<a href="#about" class="ar">من نحن</a>
+<a href="#services" class="ar">الخدمات</a>
+<a href="#contact" class="ar">اتصل بنا</a>
+
+<a href="#about" class="fr">À propos</a>
+<a href="#services" class="fr">Services</a>
+<a href="#contact" class="fr">Contact</a>
+</nav>
+
+<button class="lang" onclick="changeLanguage()">FR / AR</button>
+</header>
+
+
+<section class="hero">
+
+<div class="ar">
+<h1>الأستاذ جواد العماري</h1>
+<h2>محام بهيئة الدار البيضاء</h2>
+<p>
+مكتب محاماة يقدم الاستشارة القانونية والدفاع والمؤازرة
+في مختلف المجالات القانونية والقضائية.
+</p>
+<a href="#contact" class="btn">اتصل بالمكتب</a>
 </div>
-<div class="mark">⚖<br><small>جواد العماري<br>محام</small></div>
-</div></header>
 
-<section id="services"><div class="container">
-<div class="center"><h2>المجالات القانونية</h2><p class="sub">يمكن تعديل هذه المجالات وإضافة تخصصات أخرى حسب نشاط المكتب.</p></div>
-<div class="cards">
-<div class="card"><div class="icon">⚖</div><h3>القانون المدني والعقاري</h3><p>المعاملات العقارية، النزاعات المدنية، الملكية، القسمة والالتزامات.</p></div>
-<div class="card"><div class="icon">🏢</div><h3>الكراء والمنازعات</h3><p>عقود الكراء، الإفراغ، النزاعات المتعلقة بالواجبات والإنذارات.</p></div>
-<div class="card"><div class="icon">👨‍👩‍👧</div><h3>قضايا الأسرة</h3><p>مواكبة الملفات الأسرية وفق المقتضيات القانونية المعمول بها.</p></div>
-<div class="card"><div class="icon">💼</div><h3>قانون الشغل</h3><p>النزاعات المهنية، الأجور، الفصل والتعويضات والمنازعات الشغلية.</p></div>
-<div class="card"><div class="icon">🏛</div><h3>المنازعات الإدارية</h3><p>الطعن في القرارات الإدارية ومختلف المنازعات أمام الجهات المختصة.</p></div>
-<div class="card"><div class="icon">📚</div><h3>البحث والاستشارة القانونية</h3><p>تحليل قانوني للملفات وإعداد المذكرات والدفوع وفق المعطيات المقدمة.</p></div>
-</div></div></section>
+<div class="fr">
+<h1>Maître Jouad El Amari</h1>
+<h2>Avocat au Barreau de Casablanca</h2>
+<p>
+Cabinet d'avocat offrant conseil juridique,
+défense et assistance dans différents domaines
+du droit et du contentieux.
+</p>
+<a href="#contact" class="btn">Contacter le cabinet</a>
+</div>
 
-<section class="about" id="about"><div class="container aboutgrid">
-<div><h2>عن المكتب</h2>
-<p>الأستاذ جواد العماري، محام بهيئة الدار البيضاء. يهدف هذا الموقع إلى تسهيل التواصل وتقديم محتوى قانوني مهني ومبسط.</p>
-<ul class="list"><li>مقاربة مهنية وواضحة</li><li>تواصل مباشر مع المكتب</li><li>محتوى قانوني وتحديثات قابلة للنشر</li></ul></div>
-<div class="card"><h3>ملاحظة</h3><p>المعلومات المنشورة بالموقع ذات طابع عام ولا تغني عن دراسة كل ملف على حدة وفق وثائقه ووقائعه.</p></div>
-</div></section>
+</section>
 
-<section id="articles"><div class="container center"><h2>المقالات القانونية</h2><p class="sub">يمكن تحويل هذا القسم إلى مدونة ونشر مقالاتك وأبحاثك القانونية هنا.</p>
-<div class="cards"><div class="card"><h3>مقال قانوني جديد</h3><p>أضف هنا عنوان المقال وملخصاً قصيراً، ثم اربطه بالصفحة الكاملة.</p></div>
-<div class="card"><h3>مستجدات قانونية</h3><p>قسم مخصص للتعليق على النصوص والاجتهادات القضائية.</p></div>
-<div class="card"><h3>أسئلة وأجوبة</h3><p>إجابات مبسطة عن الأسئلة القانونية الشائعة.</p></div></div>
-</div></section>
 
-<section class="contact" id="contact"><div class="container">
-<div class="center"><h2>تواصل معنا</h2><p class="sub">أرسل بيانات التواصل الحقيقية وسأضعها مكان هذه الخانات.</p></div>
-<div class="contactgrid">
-<div class="contactbox"><h3>معلومات المكتب</h3><p>📍 الدار البيضاء – المغرب</p><p>📞 الهاتف: <a href="#">يُضاف لاحقاً</a></p><p>💬 واتساب: <a href="#">يُضاف لاحقاً</a></p><p>✉ البريد: <a href="#">يُضاف لاحقاً</a></p></div>
-<div class="contactbox"><h3>طلب تواصل</h3><p>للحفاظ على مجانية الموقع، يمكن ربط هذا الزر بواتساب أو بريد إلكتروني أو نموذج مجاني.</p><a class="btn" href="mailto:EMAIL@example.com">إرسال رسالة</a></div>
-</div></div></section>
-<footer>© 2026 الأستاذ جواد العماري – محام بهيئة الدار البيضاء</footer>
-</body></html>
+<section id="about">
+
+<h2 class="title ar">عن المكتب</h2>
+<h2 class="title fr">À propos du cabinet</h2>
+
+<div class="about">
+
+<p class="ar">
+يحرص المكتب على تقديم خدمات قانونية مهنية تقوم على
+الخبرة، الدقة، السرية، والدفاع عن مصالح الموكلين.
+</p>
+
+<p class="fr">
+Le cabinet veille à fournir des services juridiques
+professionnels fondés sur l'expertise, la rigueur,
+la confidentialité et la défense des intérêts de ses clients.
+</p>
+
+</div>
+</section>
+
+
+<section id="services">
+
+<h2 class="title ar">مجالات العمل</h2>
+<h2 class="title fr">Domaines d'intervention</h2>
+
+<div class="services">
+
+<div class="card">
+<h3 class="ar">⚖️ القانون المدني</h3>
+<h3 class="fr">⚖️ Droit civil</h3>
+<p class="ar">الاستشارات والمنازعات المدنية والعقارية.</p>
+<p class="fr">Conseil et contentieux civil et immobilier.</p>
+</div>
+
+<div class="card">
+<h3 class="ar">🏠 القانون العقاري</h3>
+<h3 class="fr">🏠 Droit immobilier</h3>
+<p class="ar">النزاعات والملكية والعقود العقارية.</p>
+<p class="fr">Litiges, propriété et contrats immobiliers.</p>
+</div>
+
+<div class="card">
+<h3 class="ar">👨‍👩‍👧 قانون الأسرة</h3>
+<h3 class="fr">👨‍👩‍👧 Droit de la famille</h3>
+<p class="ar">قضايا الأسرة والطلاق والنفقة والحضانة.</p>
+<p class="fr">Affaires familiales, divorce, pension et garde.</p>
+</div>
+
+<div class="card">
+<h3 class="ar">⚔️ القانون الجنائي</h3>
+<h3 class="fr">⚔️ Droit pénal</h3>
+<p class="ar">الدفاع والمؤازرة أمام مختلف الجهات القضائية.</p>
+<p class="fr">Défense et assistance devant les juridictions.</p>
+</div>
+
+<div class="card">
+<h3 class="ar">💼 قانون الشغل</h3>
+<h3 class="fr">💼 Droit du travail</h3>
+<p class="ar">النزاعات الفردية والجماعية في مجال الشغل.</p>
+<p class="fr">Contentieux individuel et collectif du travail.</p>
+</div>
+
+<div class="card">
+<h3 class="ar">📄 الاستشارات القانونية</h3>
+<h3 class="fr">📄 Conseil juridique</h3>
+<p class="ar">دراسة الملفات وتقديم الاستشارات القانونية.</p>
+<p class="fr">Étude des dossiers et consultations juridiques.</p>
+</div>
+
+</div>
+</section>
+
+
+<section id="contact" class="contact">
+
+<h2 class="title ar">اتصل بنا</h2>
+<h2 class="title fr">Contactez-nous</h2>
+
+<p class="ar">📍 الدار البيضاء – المغرب</p>
+<p class="fr">📍 Casablanca – Maroc</p>
+
+<p>📞 الهاتف: سيتم إضافته لاحقاً</p>
+<p>✉️ البريد الإلكتروني: سيتم إضافته لاحقاً</p>
+
+<a href="mailto:" class="btn ar">راسلنا عبر البريد الإلكتروني</a>
+<a href="mailto:" class="btn fr">Envoyer un email</a>
+
+</section>
+
+
+<footer>
+
+<span class="ar">
+© 2026 الأستاذ جواد العماري – جميع الحقوق محفوظة
+</span>
+
+<span class="fr">
+© 2026 Maître Jouad El Amari – Tous droits réservés
+</span>
+
+</footer>
+
+
+<script>
+
+let french=false;
+
+function changeLanguage(){
+
+french=!french;
+
+document.querySelectorAll(".ar").forEach(e=>{
+e.style.display=french?"none":"block";
+});
+
+document.querySelectorAll(".fr").forEach(e=>{
+e.style.display=french?"block":"none";
+});
+
+document.documentElement.lang=french?"fr":"ar";
+document.documentElement.dir=french?"ltr":"rtl";
+
+}
+
+</script>
+
+</body>
+</html>
